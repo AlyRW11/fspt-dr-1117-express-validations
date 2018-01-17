@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon ./node_modules/.bin/babel-node .",
+    "start": "./node_modules/.bin/babel-node .",
+    "start:dev": "./node_modules/.bin/nodemon ./node_modules/.bin/babel-node .",
     "prepublish": "npm run build",
     "test": "mocha test/**/*.test.js",
     "build": "babel src -d dist -s inline"
@@ -28,5 +29,10 @@
     "mocha": "^4.1.0",
     "nodemon": "^1.12.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-joi": "^0.3.1",
+    "joi": "^13.1.0"
+  }
 }
